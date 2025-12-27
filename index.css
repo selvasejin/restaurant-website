@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  font-family: 'Lato', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: rgb(249, 241, 227);
+  color: rgb(34, 34, 34);
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 6%;
+  padding-right: 6%;
+  
+}
+
+.brand {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.brandimg {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.brandname {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: rgb(88, 20, 22);
+  font-weight: 700;
+}
+
+.brandsub {
+  font-size: 14px;
+  color: rgb(105, 105, 105);
+}
+
+.nav {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.navlink {
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.navlink:hover {
+  color: rgb(88, 20, 22);
+}
+
+.hero {
+  position: relative;
+  margin-top: 18px;
+  margin-right: 6%;
+  margin-bottom: 0;
+  margin-left: 6%;
+  border-radius: 16px;
+  height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.heroimg {
+  width: 100%;
+  height: 420px;
+  background-size: cover;
+}
+
+.herocopy {
+  position: absolute;
+  left: 6%;
+  width: 520px;
+  color: rgb(255, 255, 255);
+}
+
+.herocopy h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 12px;
+  margin-left: 0;
+  color: rgb(255, 255, 255); 
+}
+
+.lead {
+  color: white;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 18px;
+  margin-left: 0;
+  font-weight: 600;
+}
+
+.heroactions {
+  display: flex;
+  gap: 12px;
+}
+
+.heroactions a {
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 18px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.first {
+  background: rgb(198, 147, 29);
+  color: rgb(88, 20, 22); 
+}
+
+.first:hover {
+  border: 2px solid rgb(88, 20, 22);
+  color: rgb(88, 20, 22);
+}
+
+.container {
+  max-width: 1200px;
+  margin-top: 44px;
+  margin-right: auto;
+  margin-bottom: 44px;
+  margin-left: auto;
+  padding-top: 0;
+  padding-right: 6%;
+  padding-bottom: 0;
+  padding-left: 6%;
+}
+
+
+.intro {
+  text-align: center;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 28px;
+  margin-left: 0;
+}
+
+.intro h2.dish{
+  font-family: 'Playfair Display', serif;
+  color: rgb(88, 20, 22); 
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 6px;
+  margin-left: 0;
+}
+
+.dis {
+  color: rgb(105, 105, 105);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 18px;
+}
+
+.card {
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.card img {
+  width: 180px;
+  height: 140px;
+  border-radius: 12px 0 0 0;
+}
+.card img:hover{
+  transform: scale(1.2);
+}
+.cardcontent {
+  padding-top: 14px;
+  padding-right: 14px;
+  padding-bottom: 14px;
+  padding-left: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardcontent h3.dish{
+  font-family: 'Playfair Display', serif;
+  color: rgb(88, 20, 22); 
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 6px;
+  margin-left: 0;
+}
+
+.cardcontent p {
+  color: rgb(105, 105, 105);
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.price {
+  margin-top: auto;
+  color: rgb(198, 147, 29);
+  font-weight: 700;
+}
+
+.testimonials {
+  margin-top: 40px;
+}
+
+.testbox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 12px;
+}
+
+.test {
+  background: rgb(255, 255, 255);
+  padding-top: 18px;
+  padding-right: 18px;
+  padding-bottom: 18px;
+  padding-left: 18px;
+  border-radius: 10px;
+}
+
+.test p {
+  color: rgb(34, 34, 34);
+  font-style: italic;
+}
+
+.testauthor {
+  margin-top: 10px;
+  font-weight: 700;
+  color: rgb(88, 20, 22);
+  font-size: 14px;
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 16px;
+    padding-right: 4%;
+    padding-bottom: 16px;
+    padding-left: 4%;
+  }
+
+  .brandimg {
+    height: 60px;
+    width: 60px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero {
+    height: 300px;
+    margin-top: 10px;
+    margin-right: 4%;
+    margin-bottom: 0;
+    margin-left: 4%;
+  }
+
+  .heroimg {
+    height: 300px;
+  }
+
+  .herocopy {
+    left: 8%;
+    width: 80%;
+  }
+
+  .herocopy h1 {
+    font-size: 22px;
+  }
+
+  .herocopy p {
+    font-size: 14px;
+  }
+
+  .heroactions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container {
+    padding-top: 0;
+    padding-right: 4%;
+    padding-bottom: 0;
+    padding-left: 4%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .testbox {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 900px) {
+  .hero {
+    height: 360px;
+  }
+
+  .heroimg {
+    height: 360px;
+  }
+
+  .herocopy h1 {
+    font-size: 30px;
+  }
+
+  .herocopy p {
+    font-size: 16px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testbox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .hero {
+    height: 420px;
+  }
+
+  .heroimg {
+    height: 420px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testbox {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
